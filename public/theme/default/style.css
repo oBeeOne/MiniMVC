@@ -1,0 +1,248 @@
+/* CSS Document */
+
+/* initialising body parameters */
+body {
+    width: 1024px;
+    height: 768px;
+    margin: auto;
+    background: url(images/bg.jpg) fixed no-repeat center center;
+    font-family:Verdana, Tahoma, Geneva;
+    color: whitesmoke;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+a:hover {
+    font-style: italic;
+    background: rgba(255,255,255,0.3);
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+form {
+    width: 66%;
+    margin: 20px auto;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+}
+
+form select {
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* debug window  */
+.debug {
+    min-width: 200px;
+    height: auto;
+    padding: 5px;
+    background: rgba(10,10,10,0.6);
+    border: rgba(255,255,255,0.6) 1px solid;
+    box-shadow: rgba(255,255,255,0.7) 0 0 8px 1px;
+}
+
+/* logged header */
+#logHeader p {
+    width: 100%;
+    height: 27px;
+    text-align: center;
+    font-size: 0.8em;
+    /*text-align: right;*/
+    background: rgba(15,15,15,0.3);
+    border: rgba(200,200,200,0.3) solid 1px;
+}
+
+#logHeader .logoff  {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: rgba(10,10,10,0.6) url('icones/logoff.png') no-repeat center center;
+    background-size: 75% 75%;
+    border-radius: 12px;
+    margin-left: 97%;
+    margin-top: -17px;    
+}
+
+#logHeader .logoff:hover {
+    box-shadow: rgba(250,250,250,0.8) 0px 0px 12px;
+    border: 1px solid rgba(255,255,255,0.6);
+}
+
+/* main menu */
+.menu {
+    list-style: none;
+    width: 100%;
+}
+
+.menu .menuItem {
+    float: left;
+    width: 195px;
+    height: 195px;
+    margin-left: 25px;
+    margin-top: 45px;
+}
+
+.menu .item {
+    display: block;
+    width: 195px;
+    height: 195px;
+    background-color: rgba(15,15,15,0.6);
+    background-image: none;
+    background-size: 0 0;
+}
+
+.hover {
+    -moz-box-shadow: rgba(255,255,255,0.5) 0 0 24px inset;
+    -webkit-box-shadow: rgba(255,255,255,0.5) 0 0 24px inset;
+    box-shadow: rgba(255,255,255,0.5) 0 0 24px inset;
+    border: 1px solid #888888;
+}
+
+/* box */
+.box {
+    width: 350px;
+    min-height: 350px;
+    margin: 50px auto;
+    background: rgba(55,55,75,0.6);
+    -moz-box-shadow: rgba(255,255,255,0.5) 2px 2px 48px 8px;
+    -webkit-box-shadow: rgba(255,255,255,0.5) 2px 2px 48px 8px;
+    box-shadow: rgba(255,255,255,0.5) 2px 2px 48px 8px;
+    border: 1px solid #888888;
+}
+
+/* full */
+.full {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: rgba(55,55,75,0.6);
+    -moz-box-shadow: rgba(255,255,255,0.5) 0 0 48px 8px;
+    -webkit-box-shadow: rgba(255,255,255,0.5) 0 0 48px 8px;
+    box-shadow: rgba(255,255,255,0.5) 0 0 48px 8px;
+    border: 1px solid #888888;
+}
+
+/* info window */
+
+.sort {
+    width: 98%;
+    height: 15%;
+    margin: 10px auto;
+    background-color: rgba(15,15,15,0.6);
+    -moz-box-shadow: rgba(255,255,255,0.5) 0 0 12px 3px;
+    -webkit-box-shadow: rgba(255,255,255,0.5) 0 0 12px 3px;
+    box-shadow: rgba(255,255,255,0.5) 0 0 12px 3px inset;
+    border: 1px solid #888888;
+}
+
+.sort-results {
+    width: 98%;
+    height: 80%;
+    margin: 10px auto;
+    background-color: rgba(64,64,64,0.6);
+    -moz-box-shadow: rgba(255,255,255,0.5) 0 0 12px 3px;
+    -webkit-box-shadow: rgba(255,255,255,0.5) 0 0 12px 3px;
+    box-shadow: rgba(255,255,255,0.5) 0 0 12px 3px inset;
+    border: 1px solid #888888;
+}
+
+.sort-form {
+    margin: 0 15px;
+    width: 97%;
+}
+
+.sort-form table {
+    width: 100%;
+}
+
+.sort-form table td {
+    width: 16%;
+    height: 30px;
+    vertical-align: middle;
+    font-size: 0.8em;
+}
+
+.sort-form input[type='radio'] {
+    display: inline;
+    margin-right: 3px;
+    
+}
+
+.sort-form select {
+    width: 150px;
+    margin: 0;
+}
+
+#sort-options {
+    width: 100%;
+}
+
+.sort-results {
+    overflow: scroll;
+}
+
+#history {
+    width: 100%;
+}
+
+#history th,  #history td {
+    border-bottom: 1px solid graytext;
+    border-right: 1px solid graytext;
+    text-align: center;
+    font-size: 0.9em;
+    border-collapse: collapse;
+    height: 30px;
+}
+
+/* login form */
+.loginBox {
+    width: 400px;
+    height: 275px;
+    margin: auto;
+    margin-top: -30%;
+    background: rgba(55,55,75,0.6);
+    -moz-box-shadow: rgba(255,255,255,0.5) 2px 2px 48px 8px;
+    -webkit-box-shadow: rgba(255,255,255,0.5) 2px 2px 48px 8px;
+    box-shadow: rgba(255,255,255,0.5) 2px 2px 48px 8px;
+    border: 1px solid #888888;
+    z-index: -10;
+}
+
+#login {
+    width: 400px;
+    height: 275px;
+    margin: auto;
+    margin-top: 25%;
+    background: rgba(55,55,75,0.6);
+    -moz-box-shadow: rgba(255,255,255,0.5) 2px 2px 48px 8px;
+    -webkit-box-shadow: rgba(255,255,255,0.5) 2px 2px 48px 8px;
+    box-shadow: rgba(255,255,255,0.5) 2px 2px 48px 8px;
+    border: 1px solid #888888;
+}
+
+#loginForm {
+    margin-left: 90px;
+    line-height: 30px;
+    z-index: 100;
+}
+
+#loginForm table {
+    margin-left: 28px;
+}
+
+#loginSubmit {
+    margin: 35px 70px;
+}
+
+
