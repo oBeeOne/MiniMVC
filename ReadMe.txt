@@ -31,10 +31,6 @@ Login vendeur :
 code = 124
 mdp = Ph0n3v3n73
 
-*** Accès online ***
-
-Le site sera disponible à l'adresse http://phone.digiarts-solutions.net pendant la durée de la correction à partir de la mise à jour des DNS.
-
 
 *** Description ***
 
